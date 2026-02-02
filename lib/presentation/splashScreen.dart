@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'Login.dart';
+
 class Splashscreen extends StatefulWidget {
   const Splashscreen({super.key});
   @override
@@ -21,19 +22,17 @@ class _SplashscreenState extends State<Splashscreen> {
     return Scaffold(
       backgroundColor: const Color.fromARGB(255, 43, 40, 40),
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            CircleAvatar(
-              radius: 60,
-              backgroundImage: AssetImage("F:\Gemini.jpg"),
-            ),
-            Text(
-              "الرئيسية",
-              style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
+        child: SingleChildScrollView(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Image.asset(
+               "assets/Gemini.jpg",
+                
+           ),
 
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );

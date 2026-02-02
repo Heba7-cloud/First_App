@@ -1,3 +1,12 @@
+// 1. أضفنا قسم الـ plugins لتعريف النسخ
+plugins {
+    id("com.android.application") version "8.11.1" apply false
+    id("org.jetbrains.kotlin.android") version "2.2.20" apply false
+    id("dev.flutter.flutter-gradle-plugin") apply false
+    // إضافة الفايربيس هنا ضرورية جداً
+    id("com.google.gms.google-services") version "4.4.1" apply false
+}
+
 allprojects {
     repositories {
         google()
